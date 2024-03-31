@@ -53,8 +53,27 @@ class Order {
         }
     }
 
-    selectProduct(){
+    selectProductID(name){
+        cy.get('tbody > tr').each(($tr)=> {
+            if($tr.text().includes(name)){
+                cy.wrap($tr).within(()=> {
+                    cy.get('td > a').each(($a)=> {
+                        let text = $a.text().trim();
+                        if ($tr.text().includes(text)) {
+                            cy.wrap($a).click()
+                            cy.log('clicked')
+                        }
+                    })
+                })
+            }
+        })
+        cy.get('div#Catalog > h2').should('contain', name);
+    }
 
+    addToCart(name){
+        cy.get('tbody > tr').each(($tr)=> {
+            
+        })
     }
 
 }
