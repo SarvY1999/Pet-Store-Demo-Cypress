@@ -1,19 +1,25 @@
 {
-    "userData" : {
-        "userId" : "Test100",
-        "newPassword" : "testPassword",
-        "repeatpassword" : "testPassword",
-        "firstName" : "TestFirstName",
-        "lastName" : "TestLastName",
-        "email" : "TestEmail@Eamil.com",
-        "phone" :  "7004556865",
-        "address1" :  "Adderes 100 Hawkins",
-        "address2" : "Adderes 100 Hawkins",
-        "city" : "Pune",
-        "state" : "Maharashtra",
-        "zip" : "4110689",
-        "country" : "India",
+    "userData": {
+        "userId": "Test100",
+        "password": "testPassword",
+        "newPassword": "testPassword",
+        "repeatpassword": "testPassword",
+        "firstName": "TestFirstName",
+        "lastName": "TestLastName",
+        "email": "TestEmail@Eamil.com",
+        "phone": "7004556865",
+        "address1": "Adderes 100 Hawkins",
+        "address2": "Adderes 100 Hawkins",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "zip": "4110689",
+        "country": "India",
         "language": "english",
-        "category":"DOGS"
+        "category": "DOGS",
+        "paymentDetails": {
+            "cardType": "Visa",
+            "cardNo": "999 9999 9999 9999",
+            "ExpDate": "12/03"
+        }
     }
-} 
+}
